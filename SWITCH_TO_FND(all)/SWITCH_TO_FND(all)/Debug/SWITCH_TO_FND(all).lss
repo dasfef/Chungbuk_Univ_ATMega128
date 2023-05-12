@@ -1,0 +1,415 @@
+
+SWITCH_TO_FND(all).elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000012  00800100  00000224  000002b8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000224  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000007  00800112  00800112  000002ca  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002ca  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000002fc  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000038  00000000  00000000  00000338  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000009ae  00000000  00000000  00000370  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000899  00000000  00000000  00000d1e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000398  00000000  00000000  000015b7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000054  00000000  00000000  00001950  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000450  00000000  00000000  000019a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000012e  00000000  00000000  00001df4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000028  00000000  00000000  00001f22  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e2       	ldi	r30, 0x24	; 36
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 31       	cpi	r26, 0x12	; 18
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a2 e1       	ldi	r26, 0x12	; 18
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a9 31       	cpi	r26, 0x19	; 25
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	87 d0       	rcall	.+270    	; 0x1d2 <main>
+  c4:	ad c0       	rjmp	.+346    	; 0x220 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <CPU_Setup>:
+unsigned char DGT[6]={0xfe, 0xfd, 0xfb, 0xf7, 0xef, 0xdf};
+unsigned char NUM[6]={0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+unsigned char Keypad;
+
+void CPU_Setup( ) {
+	DDRB=0xff;
+  c8:	8f ef       	ldi	r24, 0xFF	; 255
+  ca:	87 bb       	out	0x17, r24	; 23
+	DDRE=0xff;
+  cc:	82 b9       	out	0x02, r24	; 2
+	DDRC=0x00;
+  ce:	14 ba       	out	0x14, r1	; 20
+	DDRD=0x00;
+  d0:	11 ba       	out	0x11, r1	; 17
+  d2:	08 95       	ret
+
+000000d4 <SwitchIn>:
+}
+
+char SwitchIn(void) {
+	char KeyNo;
+	unsigned int KeyIn =(~SWITCH2<<8) | (~SWITCH1 & 0x00ff);
+  d4:	83 b3       	in	r24, 0x13	; 19
+  d6:	90 e0       	ldi	r25, 0x00	; 0
+  d8:	80 95       	com	r24
+  da:	90 95       	com	r25
+  dc:	98 2f       	mov	r25, r24
+  de:	88 27       	eor	r24, r24
+  e0:	20 b3       	in	r18, 0x10	; 16
+  e2:	30 e0       	ldi	r19, 0x00	; 0
+  e4:	20 95       	com	r18
+  e6:	30 95       	com	r19
+  e8:	82 2b       	or	r24, r18
+	switch ( KeyIn ) {
+  ea:	80 38       	cpi	r24, 0x80	; 128
+  ec:	91 05       	cpc	r25, r1
+  ee:	09 f4       	brne	.+2      	; 0xf2 <SwitchIn+0x1e>
+  f0:	48 c0       	rjmp	.+144    	; 0x182 <SwitchIn+0xae>
+  f2:	c8 f4       	brcc	.+50     	; 0x126 <SwitchIn+0x52>
+  f4:	88 30       	cpi	r24, 0x08	; 8
+  f6:	91 05       	cpc	r25, r1
+  f8:	e1 f1       	breq	.+120    	; 0x172 <SwitchIn+0x9e>
+  fa:	58 f4       	brcc	.+22     	; 0x112 <SwitchIn+0x3e>
+  fc:	82 30       	cpi	r24, 0x02	; 2
+  fe:	91 05       	cpc	r25, r1
+ 100:	09 f4       	brne	.+2      	; 0x104 <SwitchIn+0x30>
+ 102:	53 c0       	rjmp	.+166    	; 0x1aa <SwitchIn+0xd6>
+ 104:	84 30       	cpi	r24, 0x04	; 4
+ 106:	91 05       	cpc	r25, r1
+ 108:	91 f1       	breq	.+100    	; 0x16e <SwitchIn+0x9a>
+ 10a:	01 97       	sbiw	r24, 0x01	; 1
+ 10c:	09 f0       	breq	.+2      	; 0x110 <SwitchIn+0x3c>
+ 10e:	4b c0       	rjmp	.+150    	; 0x1a6 <SwitchIn+0xd2>
+ 110:	2c c0       	rjmp	.+88     	; 0x16a <SwitchIn+0x96>
+ 112:	80 32       	cpi	r24, 0x20	; 32
+ 114:	91 05       	cpc	r25, r1
+ 116:	89 f1       	breq	.+98     	; 0x17a <SwitchIn+0xa6>
+ 118:	80 34       	cpi	r24, 0x40	; 64
+ 11a:	91 05       	cpc	r25, r1
+ 11c:	81 f1       	breq	.+96     	; 0x17e <SwitchIn+0xaa>
+ 11e:	40 97       	sbiw	r24, 0x10	; 16
+ 120:	09 f0       	breq	.+2      	; 0x124 <SwitchIn+0x50>
+ 122:	41 c0       	rjmp	.+130    	; 0x1a6 <SwitchIn+0xd2>
+ 124:	28 c0       	rjmp	.+80     	; 0x176 <SwitchIn+0xa2>
+ 126:	81 15       	cp	r24, r1
+ 128:	28 e0       	ldi	r18, 0x08	; 8
+ 12a:	92 07       	cpc	r25, r18
+ 12c:	91 f1       	breq	.+100    	; 0x192 <SwitchIn+0xbe>
+ 12e:	60 f4       	brcc	.+24     	; 0x148 <SwitchIn+0x74>
+ 130:	81 15       	cp	r24, r1
+ 132:	22 e0       	ldi	r18, 0x02	; 2
+ 134:	92 07       	cpc	r25, r18
+ 136:	49 f1       	breq	.+82     	; 0x18a <SwitchIn+0xb6>
+ 138:	81 15       	cp	r24, r1
+ 13a:	24 e0       	ldi	r18, 0x04	; 4
+ 13c:	92 07       	cpc	r25, r18
+ 13e:	39 f1       	breq	.+78     	; 0x18e <SwitchIn+0xba>
+ 140:	81 15       	cp	r24, r1
+ 142:	91 40       	sbci	r25, 0x01	; 1
+ 144:	81 f5       	brne	.+96     	; 0x1a6 <SwitchIn+0xd2>
+ 146:	1f c0       	rjmp	.+62     	; 0x186 <SwitchIn+0xb2>
+ 148:	81 15       	cp	r24, r1
+ 14a:	20 e2       	ldi	r18, 0x20	; 32
+ 14c:	92 07       	cpc	r25, r18
+ 14e:	29 f1       	breq	.+74     	; 0x19a <SwitchIn+0xc6>
+ 150:	20 f4       	brcc	.+8      	; 0x15a <SwitchIn+0x86>
+ 152:	81 15       	cp	r24, r1
+ 154:	90 41       	sbci	r25, 0x10	; 16
+ 156:	f9 f0       	breq	.+62     	; 0x196 <SwitchIn+0xc2>
+ 158:	26 c0       	rjmp	.+76     	; 0x1a6 <SwitchIn+0xd2>
+ 15a:	81 15       	cp	r24, r1
+ 15c:	20 e4       	ldi	r18, 0x40	; 64
+ 15e:	92 07       	cpc	r25, r18
+ 160:	f1 f0       	breq	.+60     	; 0x19e <SwitchIn+0xca>
+ 162:	81 15       	cp	r24, r1
+ 164:	90 48       	sbci	r25, 0x80	; 128
+ 166:	e9 f0       	breq	.+58     	; 0x1a2 <SwitchIn+0xce>
+ 168:	1e c0       	rjmp	.+60     	; 0x1a6 <SwitchIn+0xd2>
+		case 0x0001: KeyNo =0; break;
+ 16a:	80 e0       	ldi	r24, 0x00	; 0
+ 16c:	08 95       	ret
+		case 0x0002: KeyNo =1; break;
+		case 0x0004: KeyNo =2; break;
+ 16e:	82 e0       	ldi	r24, 0x02	; 2
+ 170:	08 95       	ret
+		case 0x0008: KeyNo =3; break;
+ 172:	83 e0       	ldi	r24, 0x03	; 3
+ 174:	08 95       	ret
+		case 0x0010: KeyNo =4; break;
+ 176:	84 e0       	ldi	r24, 0x04	; 4
+ 178:	08 95       	ret
+		case 0x0020: KeyNo =5; break;
+ 17a:	85 e0       	ldi	r24, 0x05	; 5
+ 17c:	08 95       	ret
+		case 0x0040: KeyNo =6; break;
+ 17e:	86 e0       	ldi	r24, 0x06	; 6
+ 180:	08 95       	ret
+		case 0x0080: KeyNo =7; break;
+ 182:	87 e0       	ldi	r24, 0x07	; 7
+ 184:	08 95       	ret
+		case 0x0100: KeyNo =8; break;
+ 186:	88 e0       	ldi	r24, 0x08	; 8
+ 188:	08 95       	ret
+		case 0x0200: KeyNo =9; break;
+ 18a:	89 e0       	ldi	r24, 0x09	; 9
+ 18c:	08 95       	ret
+		case 0x0400: KeyNo =10; break;
+ 18e:	8a e0       	ldi	r24, 0x0A	; 10
+ 190:	08 95       	ret
+		case 0x0800: KeyNo =11; break;
+ 192:	8b e0       	ldi	r24, 0x0B	; 11
+ 194:	08 95       	ret
+		case 0x1000: KeyNo =12; break;
+ 196:	8c e0       	ldi	r24, 0x0C	; 12
+ 198:	08 95       	ret
+		case 0x2000: KeyNo =13; break;
+ 19a:	8d e0       	ldi	r24, 0x0D	; 13
+ 19c:	08 95       	ret
+		case 0x4000: KeyNo =14; break;
+ 19e:	8e e0       	ldi	r24, 0x0E	; 14
+ 1a0:	08 95       	ret
+		case 0x8000: KeyNo =15; break;
+ 1a2:	8f e0       	ldi	r24, 0x0F	; 15
+ 1a4:	08 95       	ret
+		default: KeyNo =16; break;
+ 1a6:	80 e1       	ldi	r24, 0x10	; 16
+ 1a8:	08 95       	ret
+char SwitchIn(void) {
+	char KeyNo;
+	unsigned int KeyIn =(~SWITCH2<<8) | (~SWITCH1 & 0x00ff);
+	switch ( KeyIn ) {
+		case 0x0001: KeyNo =0; break;
+		case 0x0002: KeyNo =1; break;
+ 1aa:	81 e0       	ldi	r24, 0x01	; 1
+		case 0x4000: KeyNo =14; break;
+		case 0x8000: KeyNo =15; break;
+		default: KeyNo =16; break;
+	}
+	return KeyNo;
+}
+ 1ac:	08 95       	ret
+
+000001ae <Hex2Dec>:
+
+void Hex2Dec(unsigned char No) {
+	NUM[1]=No / 10;
+ 1ae:	e2 e1       	ldi	r30, 0x12	; 18
+ 1b0:	f1 e0       	ldi	r31, 0x01	; 1
+ 1b2:	9d ec       	ldi	r25, 0xCD	; 205
+ 1b4:	89 9f       	mul	r24, r25
+ 1b6:	91 2d       	mov	r25, r1
+ 1b8:	11 24       	eor	r1, r1
+ 1ba:	96 95       	lsr	r25
+ 1bc:	96 95       	lsr	r25
+ 1be:	96 95       	lsr	r25
+ 1c0:	91 83       	std	Z+1, r25	; 0x01
+	NUM[0]=No % 10;
+ 1c2:	99 0f       	add	r25, r25
+ 1c4:	29 2f       	mov	r18, r25
+ 1c6:	22 0f       	add	r18, r18
+ 1c8:	22 0f       	add	r18, r18
+ 1ca:	92 0f       	add	r25, r18
+ 1cc:	89 1b       	sub	r24, r25
+ 1ce:	80 83       	st	Z, r24
+ 1d0:	08 95       	ret
+
+000001d2 <main>:
+}
+int main(void) {
+	CPU_Setup( );
+ 1d2:	7a df       	rcall	.-268    	; 0xc8 <CPU_Setup>
+	while (1) {
+		Keypad=SwitchIn( );
+ 1d4:	7f df       	rcall	.-258    	; 0xd4 <SwitchIn>
+ 1d6:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <Keypad>
+ 1da:	80 31       	cpi	r24, 0x10	; 16
+		if (Keypad>15){
+ 1dc:	38 f0       	brcs	.+14     	; 0x1ec <main+0x1a>
+ 1de:	e2 e1       	ldi	r30, 0x12	; 18
+			NUM[1]=10; NUM[0]=10;
+ 1e0:	f1 e0       	ldi	r31, 0x01	; 1
+ 1e2:	8a e0       	ldi	r24, 0x0A	; 10
+ 1e4:	81 83       	std	Z+1, r24	; 0x01
+ 1e6:	80 83       	st	Z, r24
+ 1e8:	80 e0       	ldi	r24, 0x00	; 0
+
+void Hex2Dec(unsigned char No) {
+	NUM[1]=No / 10;
+	NUM[0]=No % 10;
+}
+int main(void) {
+ 1ea:	17 c0       	rjmp	.+46     	; 0x21a <main+0x48>
+	while (1) {
+		Keypad=SwitchIn( );
+		if (Keypad>15){
+			NUM[1]=10; NUM[0]=10;
+			}else{
+			Hex2Dec(Keypad);
+ 1ec:	e0 df       	rcall	.-64     	; 0x1ae <Hex2Dec>
+ 1ee:	fc cf       	rjmp	.-8      	; 0x1e8 <main+0x16>
+ 1f0:	28 2f       	mov	r18, r24
+		}
+		for (unsigned char k=0;k<2;k++){
+			FND_SEL=DGT[k];
+ 1f2:	30 e0       	ldi	r19, 0x00	; 0
+ 1f4:	f9 01       	movw	r30, r18
+ 1f6:	e0 50       	subi	r30, 0x00	; 0
+ 1f8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1fa:	90 81       	ld	r25, Z
+ 1fc:	98 bb       	out	0x18, r25	; 24
+ 1fe:	f9 01       	movw	r30, r18
+			FND_DB=FND[ NUM[k] ];
+ 200:	ee 5e       	subi	r30, 0xEE	; 238
+ 202:	fe 4f       	sbci	r31, 0xFE	; 254
+ 204:	e0 81       	ld	r30, Z
+ 206:	f0 e0       	ldi	r31, 0x00	; 0
+ 208:	ea 5f       	subi	r30, 0xFA	; 250
+ 20a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 20c:	90 81       	ld	r25, Z
+ 20e:	93 b9       	out	0x03, r25	; 3
+ 210:	e3 e3       	ldi	r30, 0x33	; 51
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 212:	fb e2       	ldi	r31, 0x2B	; 43
+ 214:	31 97       	sbiw	r30, 0x01	; 1
+ 216:	f1 f7       	brne	.-4      	; 0x214 <main+0x42>
+ 218:	8f 5f       	subi	r24, 0xFF	; 255
+		if (Keypad>15){
+			NUM[1]=10; NUM[0]=10;
+			}else{
+			Hex2Dec(Keypad);
+		}
+		for (unsigned char k=0;k<2;k++){
+ 21a:	82 30       	cpi	r24, 0x02	; 2
+ 21c:	48 f3       	brcs	.-46     	; 0x1f0 <main+0x1e>
+ 21e:	da cf       	rjmp	.-76     	; 0x1d4 <main+0x2>
+
+00000220 <_exit>:
+ 220:	f8 94       	cli
+
+00000222 <__stop_program>:
+ 222:	ff cf       	rjmp	.-2      	; 0x222 <__stop_program>
