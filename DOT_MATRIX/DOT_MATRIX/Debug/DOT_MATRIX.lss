@@ -1,0 +1,402 @@
+
+DOT_MATRIX.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000020  00800100  000001c8  0000025c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001c8  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800120  00800120  0000027c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000027c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000002ac  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000038  00000000  00000000  000002e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000a65  00000000  00000000  00000320  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000008a7  00000000  00000000  00000d85  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000003aa  00000000  00000000  0000162c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000054  00000000  00000000  000019d8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000047f  00000000  00000000  00001a2c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000202  00000000  00000000  00001eab  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000058  00000000  00000000  000020ad  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e8 ec       	ldi	r30, 0xC8	; 200
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 32       	cpi	r26, 0x20	; 32
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a0 e2       	ldi	r26, 0x20	; 32
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a3 32       	cpi	r26, 0x23	; 35
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	79 d0       	rcall	.+242    	; 0x1b6 <main>
+  c4:	7f c0       	rjmp	.+254    	; 0x1c4 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <CPU_Setup>:
+unsigned char ROW=0;
+unsigned char Keypad;
+unsigned char result;
+
+void CPU_Setup() {
+	DOT_COL_DDR=0xff;
+  c8:	8f ef       	ldi	r24, 0xFF	; 255
+  ca:	87 bb       	out	0x17, r24	; 23
+	DOT_ROW_DDR=0xff;
+  cc:	82 b9       	out	0x02, r24	; 2
+  ce:	08 95       	ret
+
+000000d0 <Dot_Display>:
+}
+
+void Dot_Display(int distinguish) {
+  d0:	9c 01       	movw	r18, r24
+	unsigned char tRow = ROW;
+  d2:	90 91 20 01 	lds	r25, 0x0120	; 0x800120 <__data_end>
+	
+	switch(distinguish) {
+  d6:	21 30       	cpi	r18, 0x01	; 1
+  d8:	31 05       	cpc	r19, r1
+  da:	49 f1       	breq	.+82     	; 0x12e <Dot_Display+0x5e>
+  dc:	22 30       	cpi	r18, 0x02	; 2
+  de:	31 05       	cpc	r19, r1
+  e0:	09 f4       	brne	.+2      	; 0xe4 <Dot_Display+0x14>
+  e2:	52 c0       	rjmp	.+164    	; 0x188 <Dot_Display+0xb8>
+  e4:	23 2b       	or	r18, r19
+  e6:	09 f0       	breq	.+2      	; 0xea <Dot_Display+0x1a>
+  e8:	54 c0       	rjmp	.+168    	; 0x192 <Dot_Display+0xc2>
+  ea:	1b c0       	rjmp	.+54     	; 0x122 <Dot_Display+0x52>
+		case 0:
+			for (int i=0; i<8; i++) {
+				DOT_ROW = DOT_ROW_TBL[i];
+  ec:	f9 01       	movw	r30, r18
+  ee:	e0 50       	subi	r30, 0x00	; 0
+  f0:	ff 4f       	sbci	r31, 0xFF	; 255
+  f2:	80 81       	ld	r24, Z
+  f4:	83 b9       	out	0x03, r24	; 3
+				DOT_COL = ~DOT_COL_TBL[tRow];
+  f6:	e9 2f       	mov	r30, r25
+  f8:	f0 e0       	ldi	r31, 0x00	; 0
+  fa:	e0 5f       	subi	r30, 0xF0	; 240
+  fc:	fe 4f       	sbci	r31, 0xFE	; 254
+  fe:	80 81       	ld	r24, Z
+ 100:	80 95       	com	r24
+ 102:	88 bb       	out	0x18, r24	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 104:	e3 e3       	ldi	r30, 0x33	; 51
+ 106:	fb e2       	ldi	r31, 0x2B	; 43
+ 108:	31 97       	sbiw	r30, 0x01	; 1
+ 10a:	f1 f7       	brne	.-4      	; 0x108 <Dot_Display+0x38>
+				_delay_ms(dTime);
+				if(++ROW > 7) tRow=0;
+ 10c:	80 91 20 01 	lds	r24, 0x0120	; 0x800120 <__data_end>
+ 110:	8f 5f       	subi	r24, 0xFF	; 255
+ 112:	80 93 20 01 	sts	0x0120, r24	; 0x800120 <__data_end>
+ 116:	88 30       	cpi	r24, 0x08	; 8
+ 118:	08 f0       	brcs	.+2      	; 0x11c <Dot_Display+0x4c>
+ 11a:	90 e0       	ldi	r25, 0x00	; 0
+void Dot_Display(int distinguish) {
+	unsigned char tRow = ROW;
+	
+	switch(distinguish) {
+		case 0:
+			for (int i=0; i<8; i++) {
+ 11c:	2f 5f       	subi	r18, 0xFF	; 255
+ 11e:	3f 4f       	sbci	r19, 0xFF	; 255
+ 120:	02 c0       	rjmp	.+4      	; 0x126 <Dot_Display+0x56>
+}
+
+void Dot_Display(int distinguish) {
+	unsigned char tRow = ROW;
+	
+	switch(distinguish) {
+ 122:	20 e0       	ldi	r18, 0x00	; 0
+ 124:	30 e0       	ldi	r19, 0x00	; 0
+		case 0:
+			for (int i=0; i<8; i++) {
+ 126:	28 30       	cpi	r18, 0x08	; 8
+ 128:	31 05       	cpc	r19, r1
+ 12a:	04 f3       	brlt	.-64     	; 0xec <Dot_Display+0x1c>
+ 12c:	08 95       	ret
+				_delay_ms(dTime);
+				if(++ROW > 7) tRow=0;
+			}
+			break;
+		case 1:
+			ROW=7;
+ 12e:	87 e0       	ldi	r24, 0x07	; 7
+ 130:	80 93 20 01 	sts	0x0120, r24	; 0x800120 <__data_end>
+			for (int k=7; k>=0; k--){
+ 134:	27 e0       	ldi	r18, 0x07	; 7
+ 136:	30 e0       	ldi	r19, 0x00	; 0
+ 138:	13 c0       	rjmp	.+38     	; 0x160 <Dot_Display+0x90>
+				DOT_ROW = DOT_ROW_TBL[k];
+ 13a:	f9 01       	movw	r30, r18
+ 13c:	e0 50       	subi	r30, 0x00	; 0
+ 13e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 140:	80 81       	ld	r24, Z
+ 142:	83 b9       	out	0x03, r24	; 3
+				DOT_COL = ~DOT_COL2_TBL[tRow];
+ 144:	e9 2f       	mov	r30, r25
+ 146:	f0 e0       	ldi	r31, 0x00	; 0
+ 148:	e8 5f       	subi	r30, 0xF8	; 248
+ 14a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 14c:	80 81       	ld	r24, Z
+ 14e:	80 95       	com	r24
+ 150:	88 bb       	out	0x18, r24	; 24
+ 152:	e3 e3       	ldi	r30, 0x33	; 51
+ 154:	fb e2       	ldi	r31, 0x2B	; 43
+ 156:	31 97       	sbiw	r30, 0x01	; 1
+ 158:	f1 f7       	brne	.-4      	; 0x156 <Dot_Display+0x86>
+				//DOT_COL = ~DOT_COL_TBL[tRow];
+				_delay_ms(dTime);
+				if(--tRow < 0) tRow=7;
+ 15a:	91 50       	subi	r25, 0x01	; 1
+				if(++ROW > 7) tRow=0;
+			}
+			break;
+		case 1:
+			ROW=7;
+			for (int k=7; k>=0; k--){
+ 15c:	21 50       	subi	r18, 0x01	; 1
+ 15e:	31 09       	sbc	r19, r1
+ 160:	33 23       	and	r19, r19
+ 162:	5c f7       	brge	.-42     	; 0x13a <Dot_Display+0x6a>
+ 164:	08 95       	ret
+				if(--tRow < 0) tRow=7;
+			}
+			break;
+		case 2:
+			for(int k=0; k<8; k++) {
+				DOT_ROW=DOT_ROW_TBL[k];
+ 166:	fc 01       	movw	r30, r24
+ 168:	e0 50       	subi	r30, 0x00	; 0
+ 16a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 16c:	20 81       	ld	r18, Z
+ 16e:	23 b9       	out	0x03, r18	; 3
+				DOT_COL=~SMILE_TBL[k];
+ 170:	fc 01       	movw	r30, r24
+ 172:	e8 5e       	subi	r30, 0xE8	; 232
+ 174:	fe 4f       	sbci	r31, 0xFE	; 254
+ 176:	20 81       	ld	r18, Z
+ 178:	20 95       	com	r18
+ 17a:	28 bb       	out	0x18, r18	; 24
+ 17c:	e3 e3       	ldi	r30, 0x33	; 51
+ 17e:	fb e2       	ldi	r31, 0x2B	; 43
+ 180:	31 97       	sbiw	r30, 0x01	; 1
+ 182:	f1 f7       	brne	.-4      	; 0x180 <Dot_Display+0xb0>
+				_delay_ms(dTime);
+				if(--tRow < 0) tRow=7;
+			}
+			break;
+		case 2:
+			for(int k=0; k<8; k++) {
+ 184:	01 96       	adiw	r24, 0x01	; 1
+ 186:	02 c0       	rjmp	.+4      	; 0x18c <Dot_Display+0xbc>
+}
+
+void Dot_Display(int distinguish) {
+	unsigned char tRow = ROW;
+	
+	switch(distinguish) {
+ 188:	80 e0       	ldi	r24, 0x00	; 0
+ 18a:	90 e0       	ldi	r25, 0x00	; 0
+				_delay_ms(dTime);
+				if(--tRow < 0) tRow=7;
+			}
+			break;
+		case 2:
+			for(int k=0; k<8; k++) {
+ 18c:	88 30       	cpi	r24, 0x08	; 8
+ 18e:	91 05       	cpc	r25, r1
+ 190:	54 f3       	brlt	.-44     	; 0x166 <Dot_Display+0x96>
+ 192:	08 95       	ret
+
+00000194 <SwitchIn>:
+	}
+}
+
+int SwitchIn() {
+	int num = 0;
+	Keypad = ~SWITCH;
+ 194:	89 b3       	in	r24, 0x19	; 25
+ 196:	80 95       	com	r24
+ 198:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <Keypad>
+	switch(Keypad) {
+ 19c:	81 30       	cpi	r24, 0x01	; 1
+ 19e:	41 f0       	breq	.+16     	; 0x1b0 <SwitchIn+0x1c>
+ 1a0:	84 30       	cpi	r24, 0x04	; 4
+ 1a2:	19 f0       	breq	.+6      	; 0x1aa <SwitchIn+0x16>
+			}
+	}
+}
+
+int SwitchIn() {
+	int num = 0;
+ 1a4:	80 e0       	ldi	r24, 0x00	; 0
+ 1a6:	90 e0       	ldi	r25, 0x00	; 0
+ 1a8:	08 95       	ret
+		case 0x02: //Arrow up
+			num = 0;
+			break;
+			
+		case 0x04: //Arrow Down
+			num = 1;
+ 1aa:	81 e0       	ldi	r24, 0x01	; 1
+ 1ac:	90 e0       	ldi	r25, 0x00	; 0
+			break;
+ 1ae:	08 95       	ret
+int SwitchIn() {
+	int num = 0;
+	Keypad = ~SWITCH;
+	switch(Keypad) {
+		case 0x01: //smile
+			num = 2;
+ 1b0:	82 e0       	ldi	r24, 0x02	; 2
+ 1b2:	90 e0       	ldi	r25, 0x00	; 0
+		case 0x04: //Arrow Down
+			num = 1;
+			break;
+	}
+	return num;
+}
+ 1b4:	08 95       	ret
+
+000001b6 <main>:
+
+int main(void) {
+	CPU_Setup();
+ 1b6:	88 df       	rcall	.-240    	; 0xc8 <CPU_Setup>
+	
+	while(1) {
+		result = SwitchIn();
+ 1b8:	ed df       	rcall	.-38     	; 0x194 <SwitchIn>
+ 1ba:	80 93 21 01 	sts	0x0121, r24	; 0x800121 <result>
+		Dot_Display(result);
+ 1be:	90 e0       	ldi	r25, 0x00	; 0
+ 1c0:	87 df       	rcall	.-242    	; 0xd0 <Dot_Display>
+ 1c2:	fa cf       	rjmp	.-12     	; 0x1b8 <main+0x2>
+
+000001c4 <_exit>:
+ 1c4:	f8 94       	cli
+
+000001c6 <__stop_program>:
+ 1c6:	ff cf       	rjmp	.-2      	; 0x1c6 <__stop_program>
